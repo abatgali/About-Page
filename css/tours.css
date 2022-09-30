@@ -1,0 +1,130 @@
+.tours {
+  position: relative;
+  top: -30px;
+  margin: 0 auto;
+  width: 800px;
+  text-align: left;
+}
+.tours .cards {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 55px;
+  font-family: "Proxima Nova Condensed";
+  text-align: center;
+  font-weight: bold;
+}
+.tours .cards .card {
+  height: 304px;
+  width: 236px;
+}
+.tours .cards #first {
+  background-image: url(../images/special-offer-01.jpg);
+  background-size: cover;
+}
+.tours .cards #second {
+  background-image: url(../images/special-offer-02.jpg);
+  background-size: cover;
+}
+.tours .cards #third {
+  background-image: url(../images/tour/tour-02.jpg);
+  background-size: cover;
+}
+.tours form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 3em;
+}
+.tours form input, .tours form textarea {
+  padding: 1em;
+  border: 1px solid #79ADDC;
+  margin: 20px 0 0 0;
+}
+.tours form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.tours form #first-four-inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+}
+.tours form #first-four-inputs input {
+  width: 45%;
+}
+.tours form input[type=date] {
+  width: 80%;
+  margin-left: auto;
+}
+.tours form input[type=submit] {
+  background-color: #79ADDC;
+  color: white;
+  border-radius: 20px;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 700px) {
+  .tours {
+    width: 100%;
+  }
+  .tours .cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 1em auto 1em;
+    width: 60%;
+    gap: 10px;
+  }
+  .tours form {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
+  .tours form input {
+    width: 75%;
+    margin: 0.5em auto 0;
+  }
+  .tours form #first-four-inputs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 20px;
+  }
+  .tours h1 {
+    font-size: xx-large;
+    text-align: center;
+  }
+}
+@media screen and (max-device-width: 810px) and (-webkit-min-device-pixel-ratio: 1) {
+  .tours {
+    width: 100%;
+  }
+  .tours .cards {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    gap: 10px;
+    margin: 1em auto;
+  }
+}

@@ -1,0 +1,50 @@
+nav {
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 80%;
+  margin: 0 auto;
+  border-bottom: 2px solid black;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+nav .company {
+  width: 90px;
+  height: 42px;
+}
+nav div {
+  width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 42px;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  h1 {
+    font-size: 45px;
+  }
+
+  nav {
+    max-width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 1em;
+  }
+  nav #links {
+    margin: 0 auto;
+    font-size: small;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
